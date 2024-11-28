@@ -110,4 +110,5 @@ location / {
 
 之后在chrome地址栏中输入`chrome://extensions/`,然后选择`加载已解压的拓展程序`:
 ![img.png](pic%2Fimg.png)
+
 选中项目中的`auto_login_plug`即可
