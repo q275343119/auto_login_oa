@@ -1,0 +1,28 @@
+{
+  "manifest_version": 2,
+  "name": "OA Auto Login",
+  "version": "2.0",
+  "permissions": ["activeTab", "storage","$替换为验证码服务的域名$"],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "content_scripts": [
+    {
+      "matches": ["$替换为登录界面地址如：https://xxx.xxx.com.cn/por/login_psw.csp/$*"],
+      "js": ["content.js"]
+    },
+    {
+      "matches": ["$替换为验证码界面地址如：https://xxx.xxx.com.cn/por/login_sms.csp/$*"],
+      "js": ["code.js"]
+    }
+  ],
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  }
+}
