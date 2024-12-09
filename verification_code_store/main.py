@@ -8,6 +8,8 @@ from collections import defaultdict
 
 from fastapi.middleware.cors import CORSMiddleware
 
+from ocr_server import identification_verification_code
+
 app = FastAPI()
 
 app.add_middleware(
@@ -60,6 +62,16 @@ async def get_code(phone: str, project_name: str):
             return None
         return code_obj.code
     return None
+
+
+@app.get("/verify/code")
+async def verification_code(bs64: str):
+    """
+    获取验证码
+    :param bs64:
+    :return:
+    """
+    return identification_verification_code(bs64)
 
 
 if __name__ == '__main__':
