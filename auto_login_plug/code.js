@@ -12,7 +12,7 @@ async function getCode() {
         }
 
         // 请求验证码
-        await fetch('$替换为你的域名$/get/code?phone=YiPhone&project_name=cms', {
+        await fetch('https://$替换为你的域名$/get/code?phone=YiPhone&project_name=cms', {
             method: 'GET',
         })
             .then(function (response) {
