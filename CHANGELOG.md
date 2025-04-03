@@ -7,7 +7,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [0.0.1] - 2024-12-20
 
-Here we would have the update steps for 0.0.0 for people to follow.
+Here we would have the update steps for 0.0.1 for people to follow.
 
 ### Added
 
@@ -18,4 +18,18 @@ Here we would have the update steps for 0.0.0 for people to follow.
 - 短信页面改为轮询的方式查询验证码
 
 ### Fixed
- 
+
+## [0.0.2] - 2025-04-03
+
+Here we would have the update steps for 0.0.2 for people to follow.
+
+### Added
+
+
+
+### Changed
+
+
+
+### Fixed
+ - 修复部分验证码无法提取的bug

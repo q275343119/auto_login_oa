@@ -19,7 +19,7 @@ async function getCode() {
                 return response.json();
             })
             .then(function (data) {
-                code = JSON.parse(data);
+                code = data.toString();
                 console.log("当前验证码：", code);
             })
             .catch(function (error) {
